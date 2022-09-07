@@ -1,3 +1,4 @@
 # AlertExtension
 文案居左显示
-![1388b5b0d416234185ef7f1909da74f4](https://user-images.githubusercontent.com/38520288/188803260-483fe910-c102-40ba-b0d4-aacbec36651a.jpg)
+
+![50f13d19fcdb3185d270223c36c67867](https://user-images.githubusercontent.com/38520288/188803737-c2de8d98-938b-4c58-bf06-e4b919db5997.jpg)
