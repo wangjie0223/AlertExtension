@@ -12,9 +12,9 @@ let SCREEN_WIDTH = UIScreen.main.bounds.size.width
 let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
 
 enum TestEnum: String, CaseIterable {
-    case normal = "文案居左显示"
-    case adjust = "行间距可调"
-    case titleLeft = "title左对齐"
+    case normal = "message 居左显示"
+    case adjust = "message 行间距可调"
+    case titleLeft = "title 左对齐"
 }
 
 class ViewController: UIViewController {
@@ -55,7 +55,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func showAlert(type: TestEnum) {
         
         let msg: String = "UIAlertController的文案居左显示\n我是黑夜里大雨纷飞的人啊 1 “又到一年六月，有人笑有人哭，有人欢乐有人忧愁"
-        let alertController = UIAlertController.init(title: "title", message: msg, preferredStyle: .alert)
+        
+        let alertController = UIAlertController.init(title: type.rawValue, message: msg, preferredStyle: .alert)
         let actionC = UIAlertAction.init(title: "确定", style: .default) { a in }
         alertController.addAction(actionC)
         present(alertController, animated: true, completion: nil)
